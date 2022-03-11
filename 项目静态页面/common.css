@@ -1,0 +1,89 @@
+* { margin: 0; padding: 0; }
+ul, li { list-style: none; }
+img { display: block; }
+html, body { height: 100%; background-color: #f5f4f9; }
+div { box-sizing: border-box; }
+h1, h2, h3 { font-size: 16px; }                                   /*给标题统一字体大小*/
+
+.clear:after{ content: ''; display: block; clear: both; }           /*清除浮动*/
+
+.container { display:flex; justify-content: center; align-items: center; } 
+
+
+/*  */
+
+#main nav { display: flex; justify-content: space-between; padding: 12px 15px; background-color: #ebeff2; margin-bottom: 20px; font-size: 20px; align-items:center; font-weight: bold; }
+
+#main .show { display:flex; justify-content: center; align-items: center; }
+#main .show .show_box { width: 85%; height: 18vh; flex-wrap: wrap; position: relative; background-color: #fff; border-radius: 20px; }
+#main .show .show_box .out { position: absolute; left: 14%; top: 20%; }
+#main .show .show_box .in { position: absolute; right: 18%; top: 20%; }
+#main .show .show_box .out span:nth-of-type(1),
+#main .show .show_box .in span:nth-of-type(1) { font-size: 14px; color: #9b9b9b; }
+#main .show .show_box .out span:nth-of-type(2),
+#main .show .show_box .in span:nth-of-type(2) { position: absolute; left: -26px; top: 20px; font-size: 28px; width: 120px; }
+#main .show .show_box .show_link { position: absolute; bottom: 15%; font-size: 14px; color: #0f9570; }
+
+#main .list_box { margin-top: 20px; }
+#main .list_box .nav { font-size: 1.17em; text-align: center; margin-bottom: 18px ; }
+#main .list_box .list { height: 50vh; overflow: auto; }
+#main .list_box .list li { display: flex; justify-content: space-between; margin: 15px; padding: 10px; background-color: #fff; border-radius: 15px; }
+#main .list_box .list li .label { display: flex; flex-direction: column; width: 75%; font-size: 18px; padding-left: 10px; overflow: hidden; white-space: nowrap; text-overflow:ellipsis; }
+#main .list_box .list li .label span:nth-of-type(2) { font-size: 14px; color: #afafaf; overflow: hidden; white-space: nowrap; text-overflow:ellipsis; }
+#main .list_box .list li .money { display: flex; justify-content: center; align-items: center; font-size: 16px; }
+
+#main .record { border: none; outline: none; height: 43px; width: 123px; border-radius: 20px; background-color: #f60; position: absolute; right: 30px; color: #fff; margin-top: 20px; }
+
+
+
+
+#chart nav div { display: flex; justify-content: space-between; padding: 12px 16px; align-items: center; background-color: #ebefe0; }
+#chart nav div i { display: block; font-weight: bold; margin-left: 8px; }
+#chart nav div span { font-size: 20px; }
+
+#chart .detail { display: flex; flex-direction: column; margin: 25px 10px; background-color: #fff; padding-left: 45px; padding-top: 25px; padding-bottom: 25px; position: relative; border-radius: 25px; }
+#chart .detail .date { font-size: 24px; font-weight: bold; margin-bottom: 8px; }
+#chart .detail .out span:nth-of-type(1),
+#chart .detail .in span:nth-of-type(1) { font-size: 18px; color: #333333; }
+#chart .detail .out span:nth-of-type(2),
+#chart .detail .in span:nth-of-type(2) { font-size: 16px; color: gray; }
+
+#chart .button { display: flex; justify-content: center; align-items: center; }
+#chart .button .out_btn,
+#chart .button .in_btn { height: 30px; width: 70px; border: none; background-color: #f60; border-radius: 20px; color: #fff; margin: 2px 18px; font-size: 18px; }
+#chart .switchover { margin-top: 20px; display: flex; justify-content: space-between;flex-direction: row; }
+#chart .switchover button { margin-right: 25px; outline: none; border: none; color: #f60; background-color: #f5f4f9; font-size: 16px; }
+
+#chart .diagram_box { width: 375px; height: 320px; background-color: #fff; margin-top: 24px; padding: 10px 2px;  }
+
+
+
+
+
+#addition nav .title_box { display: flex; justify-content: space-between; padding: 12px 16px; align-items: center; background-color: #ebefe0; }
+#addition nav .title_box i { display: block; font-weight: bold; margin-left: 8px; }
+#addition nav .title_box .type_btn { display: inline; } 
+#addition nav .title_box .type_btn span { font-size: 20px; margin: 0px 10px; }
+#addition nav .title_box .type_btn span.active { border-bottom: 2px #000 solid; }
+#addition .label_box { height: 24vh; background-color: #fff; padding: 10px 8px; margin: 20px 10px; border-radius: 15px; }
+#addition .label_box .label_list { display: flex; justify-content: flex-start; flex-wrap: wrap; padding: 2px 5px; }
+#addition .label_box .label_list div { margin: 10px 3%; width: 19%; text-align: center; }
+#addition .label_box .label_list div i { font-size: 24px; font-weight: bold; }
+#addition .date_box { width: 100%; margin: 20px 0px; background-color: #fff; display: inline-block; border-radius: 25px; }
+#addition .date_box span { font-size: 18px; font-weight: bold; padding: 0px 25px; }
+#addition .date_box input { border: 2px solid rgba(0,0,0,.5); }
+
+#addition .sum_box { width: 100%; height: 60px; margin-top: 10px; }
+#addition .sum_box .sum {  height: 100%; display: block; background-color: #fff; margin: 0px 10px; border-radius: 25px; display: flex; justify-content: space-between; align-items: center; }
+#addition .sum_box .sum span { display: inline-block; font-size: 30px; font-weight: bold; margin: 0px 30px; }
+#addition .sum_box .sum div { display: inline-block; font-size: 28px; margin: 0px 20px; }
+#addition .sum_box .sum input { display: none; }
+
+#addition .notes { display: block; padding-left: 30px; background-color: #fff; margin-top: 30px; line-height: 30px; font-size: 20px; font-weight: 500; }
+#addition .notes input { border: none; outline: none; font-size: inherit }
+
+#addition .set_btn1 { position: absolute; bottom: 120px; width: 100%; text-align: center; }
+#addition .set_btn2 { position: absolute; bottom: 70px; width: 100%; text-align: center; }
+#addition .set_btn1 button,
+#addition .set_btn2 button { border: none; outline: none; width: 260px; height: 30px; background-color: #0F9570; color: #fff; font-size: 18px; border-radius: 15px; }
+
